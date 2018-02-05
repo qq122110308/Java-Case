@@ -1,0 +1,148 @@
+2018-2-2 17:20:16[ INFO](AbstractTestContextBootstrapper.java:182) Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4d7d16fe, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4f70a570, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6c7d84ce]
+2018-2-2 17:20:16[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-dao.xml]
+2018-2-2 17:20:17[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-service.xml]
+2018-2-2 17:20:17[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-ehcache.xml]
+2018-2-2 17:20:17[ INFO](AbstractApplicationContext.java:510) Refreshing org.springframework.context.support.GenericApplicationContext@7a631c70: startup date [Fri Feb 02 17:20:17 CST 2018]; root of context hierarchy
+2018-2-2 17:20:17[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-2-2 17:20:17[ INFO](MLog.java:80) MLog clients using log4j logging.
+2018-2-2 17:20:18[ INFO](C3P0Registry.java:204) Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-2-2 17:20:18[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2018-2-2 17:20:19[ INFO](AbstractPoolBackedDataSource.java:462) Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 2, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 10000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99tnt73te70ra8i|30d4c8ad, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99tnt73te70ra8i|30d4c8ad, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/ssm, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2018-2-2 17:20:20[ERROR](DiskStorageFactory.java:484) Disk Write of 1 failed: 
+java.io.NotSerializableException: com.ry.Entity.Users
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.defaultWriteFields(Unknown Source)
+	at java.io.ObjectOutputStream.defaultWriteObject(Unknown Source)
+	at net.sf.ehcache.Element.writeObject(Element.java:867)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at java.io.ObjectStreamClass.invokeWriteObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeSerialData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at net.sf.ehcache.util.MemoryEfficientByteArrayOutputStream.serialize(MemoryEfficientByteArrayOutputStream.java:97)
+	at net.sf.ehcache.store.disk.DiskStorageFactory.serializeElement(DiskStorageFactory.java:399)
+	at net.sf.ehcache.store.disk.DiskStorageFactory.write(DiskStorageFactory.java:381)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$DiskWriteTask.call(DiskStorageFactory.java:473)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$PersistentDiskWriteTask.call(DiskStorageFactory.java:1067)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$PersistentDiskWriteTask.call(DiskStorageFactory.java:1051)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2018-2-2 17:20:32[ERROR](DiskStorageFactory.java:484) Disk Write of 1 failed: 
+java.io.NotSerializableException: com.ry.Entity.Users
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.defaultWriteFields(Unknown Source)
+	at java.io.ObjectOutputStream.defaultWriteObject(Unknown Source)
+	at net.sf.ehcache.Element.writeObject(Element.java:867)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at java.io.ObjectStreamClass.invokeWriteObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeSerialData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at net.sf.ehcache.util.MemoryEfficientByteArrayOutputStream.serialize(MemoryEfficientByteArrayOutputStream.java:97)
+	at net.sf.ehcache.store.disk.DiskStorageFactory.serializeElement(DiskStorageFactory.java:399)
+	at net.sf.ehcache.store.disk.DiskStorageFactory.write(DiskStorageFactory.java:381)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$DiskWriteTask.call(DiskStorageFactory.java:473)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$PersistentDiskWriteTask.call(DiskStorageFactory.java:1067)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$PersistentDiskWriteTask.call(DiskStorageFactory.java:1051)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2018-2-2 17:20:32[ INFO](AbstractApplicationContext.java:862) Closing org.springframework.context.support.GenericApplicationContext@7a631c70: startup date [Fri Feb 02 17:20:17 CST 2018]; root of context hierarchy
+2018-2-2 17:20:32[ INFO](EhCacheManagerFactoryBean.java:181) Shutting down EhCache CacheManager
+2018-2-2 17:20:32[ERROR](DiskStorageFactory.java:484) Disk Write of 1 failed: 
+java.io.NotSerializableException: com.ry.Entity.Users
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.defaultWriteFields(Unknown Source)
+	at java.io.ObjectOutputStream.defaultWriteObject(Unknown Source)
+	at net.sf.ehcache.Element.writeObject(Element.java:867)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at java.io.ObjectStreamClass.invokeWriteObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeSerialData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at net.sf.ehcache.util.MemoryEfficientByteArrayOutputStream.serialize(MemoryEfficientByteArrayOutputStream.java:97)
+	at net.sf.ehcache.store.disk.DiskStorageFactory.serializeElement(DiskStorageFactory.java:399)
+	at net.sf.ehcache.store.disk.DiskStorageFactory.write(DiskStorageFactory.java:381)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$DiskWriteTask.call(DiskStorageFactory.java:473)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$PersistentDiskWriteTask.call(DiskStorageFactory.java:1067)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$IndexWriteTask.call(DiskStorageFactory.java:1104)
+	at net.sf.ehcache.store.disk.DiskStorageFactory.unbind(DiskStorageFactory.java:917)
+	at net.sf.ehcache.store.disk.DiskStore.dispose(DiskStore.java:664)
+	at net.sf.ehcache.store.CacheStore.dispose(CacheStore.java:327)
+	at net.sf.ehcache.Cache.dispose(Cache.java:2521)
+	at net.sf.ehcache.CacheManager.shutdown(CacheManager.java:1523)
+	at org.springframework.cache.ehcache.EhCacheManagerFactoryBean.destroy(EhCacheManagerFactoryBean.java:182)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:907)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:914)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:884)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:804)
+2018-2-2 17:22:03[ INFO](AbstractTestContextBootstrapper.java:182) Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4d7d16fe, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4f70a570, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6c7d84ce]
+2018-2-2 17:22:04[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-dao.xml]
+2018-2-2 17:22:04[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-service.xml]
+2018-2-2 17:22:04[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-ehcache.xml]
+2018-2-2 17:22:04[ INFO](AbstractApplicationContext.java:510) Refreshing org.springframework.context.support.GenericApplicationContext@57d37013: startup date [Fri Feb 02 17:22:04 CST 2018]; root of context hierarchy
+2018-2-2 17:22:04[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-2-2 17:22:04[ INFO](MLog.java:80) MLog clients using log4j logging.
+2018-2-2 17:22:04[ INFO](C3P0Registry.java:204) Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-2-2 17:22:05[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2018-2-2 17:22:05[ INFO](AbstractPoolBackedDataSource.java:462) Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 2, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 10000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99tnt9e7ucmjprm|4852c063, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99tnt9e7ucmjprm|4852c063, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/ssm, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2018-2-2 17:22:18[ INFO](AbstractApplicationContext.java:862) Closing org.springframework.context.support.GenericApplicationContext@57d37013: startup date [Fri Feb 02 17:22:04 CST 2018]; root of context hierarchy
+2018-2-2 17:22:18[ INFO](EhCacheManagerFactoryBean.java:181) Shutting down EhCache CacheManager
+2018-2-2 17:23:14[ INFO](AbstractTestContextBootstrapper.java:182) Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5262a98a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4b68cd47, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d7d16fe]
+2018-2-2 17:23:14[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-dao.xml]
+2018-2-2 17:23:14[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-service.xml]
+2018-2-2 17:23:14[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-ehcache.xml]
+2018-2-2 17:23:14[ INFO](AbstractApplicationContext.java:510) Refreshing org.springframework.context.support.GenericApplicationContext@121bcc9f: startup date [Fri Feb 02 17:23:14 CST 2018]; root of context hierarchy
+2018-2-2 17:23:15[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-2-2 17:23:15[ INFO](MLog.java:80) MLog clients using log4j logging.
+2018-2-2 17:23:15[ INFO](C3P0Registry.java:204) Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-2-2 17:23:15[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2018-2-2 17:23:16[ INFO](AbstractPoolBackedDataSource.java:462) Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 2, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 10000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99tntawlc9tgmxo|7e6cb446, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99tntawlc9tgmxo|7e6cb446, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/ssm, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2018-2-2 17:23:29[ INFO](AbstractApplicationContext.java:862) Closing org.springframework.context.support.GenericApplicationContext@121bcc9f: startup date [Fri Feb 02 17:23:14 CST 2018]; root of context hierarchy
+2018-2-2 17:23:29[ INFO](EhCacheManagerFactoryBean.java:181) Shutting down EhCache CacheManager
+2018-2-2 17:26:22[ INFO](AbstractTestContextBootstrapper.java:182) Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4b9f657, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4cdbcc2d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7239c5c6]
+2018-2-2 17:26:22[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-dao.xml]
+2018-2-2 17:26:22[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-service.xml]
+2018-2-2 17:26:22[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-ehcache.xml]
+2018-2-2 17:26:23[ INFO](AbstractApplicationContext.java:510) Refreshing org.springframework.context.support.GenericApplicationContext@5a84f3c: startup date [Fri Feb 02 17:26:23 CST 2018]; root of context hierarchy
+2018-2-2 17:26:23[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-2-2 17:26:23[ INFO](MLog.java:80) MLog clients using log4j logging.
+2018-2-2 17:26:23[ INFO](C3P0Registry.java:204) Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-2-2 17:26:23[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2018-2-2 17:26:24[ INFO](AbstractApplicationContext.java:862) Closing org.springframework.context.support.GenericApplicationContext@5a84f3c: startup date [Fri Feb 02 17:26:23 CST 2018]; root of context hierarchy
+2018-2-2 17:26:24[ INFO](EhCacheManagerFactoryBean.java:181) Shutting down EhCache CacheManager
+2018-2-2 17:33:14[ INFO](AbstractTestContextBootstrapper.java:182) Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@249a2807, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4b9f657, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4cdbcc2d]
+2018-2-2 17:33:14[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-dao.xml]
+2018-2-2 17:33:14[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-service.xml]
+2018-2-2 17:33:15[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-ehcache.xml]
+2018-2-2 17:33:15[ INFO](AbstractApplicationContext.java:510) Refreshing org.springframework.context.support.GenericApplicationContext@1785f0d: startup date [Fri Feb 02 17:33:15 CST 2018]; root of context hierarchy
+2018-2-2 17:33:15[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-2-2 17:33:15[ INFO](MLog.java:80) MLog clients using log4j logging.
+2018-2-2 17:33:15[ INFO](C3P0Registry.java:204) Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-2-2 17:33:16[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2018-2-2 17:33:29[ INFO](AbstractApplicationContext.java:862) Closing org.springframework.context.support.GenericApplicationContext@1785f0d: startup date [Fri Feb 02 17:33:15 CST 2018]; root of context hierarchy
+2018-2-2 17:33:29[ INFO](EhCacheManagerFactoryBean.java:181) Shutting down EhCache CacheManager

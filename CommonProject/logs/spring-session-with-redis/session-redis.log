@@ -1,0 +1,11 @@
+2018-2-5 08:47:54[ INFO](AbstractTestContextBootstrapper.java:182) Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@249a2807, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4b9f657, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4cdbcc2d]
+2018-2-5 08:47:55[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-dao.xml]
+2018-2-5 08:47:55[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-service.xml]
+2018-2-5 08:47:55[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-ehcache.xml]
+2018-2-5 08:47:55[ INFO](AbstractApplicationContext.java:510) Refreshing org.springframework.context.support.GenericApplicationContext@1785f0d: startup date [Mon Feb 05 08:47:55 CST 2018]; root of context hierarchy
+2018-2-5 08:47:56[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-2-5 08:47:56[ INFO](MLog.java:80) MLog clients using log4j logging.
+2018-2-5 08:47:56[ INFO](C3P0Registry.java:204) Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-2-5 08:47:57[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2018-2-5 08:48:11[ INFO](AbstractApplicationContext.java:862) Closing org.springframework.context.support.GenericApplicationContext@1785f0d: startup date [Mon Feb 05 08:47:55 CST 2018]; root of context hierarchy
+2018-2-5 08:48:11[ INFO](EhCacheManagerFactoryBean.java:181) Shutting down EhCache CacheManager
