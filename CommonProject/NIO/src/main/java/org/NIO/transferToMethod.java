@@ -4,7 +4,7 @@ import java.io.RandomAccessFile;
 import java.nio.channels.FileChannel;
 
 /** 
-* @author ry 
+* @author rickiyang
 * @create 2018年1月30日 下午4:21:18 
 * 类说明   transferTo()方法将数据从FileChannel传输到其他的channel中
 */

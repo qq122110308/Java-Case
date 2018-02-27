@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 /** 
 * @author ry 
 * @create 2018年2月5日 上午8:52:05 
-* @describe
+* @describe  https://www.cnblogs.com/csniper/p/5781386.html
 */
 public class MyExecutor extends Thread{
 	private int index;
@@ -18,7 +18,7 @@ public class MyExecutor extends Thread{
 	public void run(){
 		try{
 			System.out.println("["+this.index+"] start....");
-		    Thread.sleep((int)(Math.random()*1000));
+		    Thread.sleep((int)(Math.random()*10000));
 		    System.out.println("["+this.index+"] end.");
 		}catch(Exception e){
 			e.printStackTrace();

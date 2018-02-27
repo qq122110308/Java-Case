@@ -4,7 +4,7 @@ import java.io.RandomAccessFile;
 import java.nio.channels.FileChannel;
 
 /** 
-* @author ry 
+* @author rickiyang
 * @create 2018年1月30日 下午3:46:12 
 * 类说明   在Java NIO中，如果两个通道中有一个是FileChannel，那你可以直接将数据从一个channel
 * FileChannel的transferFrom()方法可以将数据从源通道传输到FileChannel中

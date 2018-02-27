@@ -6,7 +6,7 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
 /** 
-* @author ry 
+* @author rickiyang
 * @create2018年1月30日 下午5:14:57 
 * 类说明   复制文件的例子来看一下对于一个120M的文件通过这种方式到底能有多快速度的提升
 * 地址  http://blog.csdn.net/a953713428/article/details/64907250

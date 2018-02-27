@@ -6,7 +6,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 /**
- * @author ry
+ * @author rickiyang
  * @create 2018年1月30日 上午11:29:15 
  * 类说明 使用FileChannel读取数据到Buffer中的示例
  */

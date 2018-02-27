@@ -26,5 +26,9 @@
   	<module>NIO</module>
     <module>spring-ehcache</module>
     <module>concurrent</module>
+    <module>http</module>
+    <module>TheService</module>
+    <module>TheClient</module>
+    <module>springSecurity</module>
   </modules>
 </project>

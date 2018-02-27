@@ -6,7 +6,7 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
 /** 
-* @author ry 
+* @author rickiyang
 * @create 2018年1月30日 下午4:36:05 
 * 类说明   内存映射读取文件和普通的IO流读取一个150M大文件的速度对比
 * 地址：http://blog.csdn.net/a953713428/article/details/64907250
