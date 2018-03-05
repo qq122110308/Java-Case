@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop.xsd
+	http://www.springframework.org/schema/context 
+   	http://www.springframework.org/schema/context/spring-context.xsd
+   	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc.xsd
+	">
+	
+	<!-- 开启springmvc注解模式 -->
+	<mvc:annotation-driven />
+	
+	<mvc:default-servlet-handler />	
+	
+	
+	<!-- 3.配置jsp 显示ViewResolver -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	<!-- 扫描相关的bean -->
+	<context:component-scan base-package="com.ry.controllers" />
+		
+	
+	<bean id="advice" class="com.ry.aop.Advice" />
+	<aop:config >
+		<aop:aspect  ref="advice"  >
+			<aop:before method="record" pointcut="execution(* com.ry.controllers.*.*(..))"/>	
+		</aop:aspect>
+	</aop:config>
+	
+</beans>	

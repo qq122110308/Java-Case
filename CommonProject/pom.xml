@@ -30,5 +30,8 @@
     <module>TheService</module>
     <module>TheClient</module>
     <module>springSecurity</module>
+    <module>shrio</module>
+    <module>springAop</module>
+    <module>ssh</module>
   </modules>
 </project>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 5.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-5.0.dtd">      
+<hibernate-mapping>  
+    <class name="com.ry.pojo.User" table="user" >  
+          
+        <id name="userId" column="user_id">  
+            <generator class="identity"/>  
+        </id>  
+          
+          
+        <property name="userName" column="user_name" />  
+        <property name="userRealName" column="user_realName"/>  
+        <property name="userPass" column="user_pass"/>
+        <property name="userSex" column="user_sex"/>
+        <property name="userCreate" column="user_create"/>
+        <property name="userLastTime" column="user_lastTime"/>
+        <property name="userEmail" column="user_email"/>  
+          
+           
+    </class>    
+</hibernate-mapping> 
