@@ -33,5 +33,7 @@
     <module>shrio</module>
     <module>springAop</module>
     <module>ssh</module>
+    <module>transactional</module>
+    <module>transactionalAnnotation</module>
   </modules>
 </project>
